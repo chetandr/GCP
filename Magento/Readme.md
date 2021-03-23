@@ -1,0 +1,902 @@
+# Magento
+## [Product Edition](product-edition)
+- [Magento Open Sources](magento-open-sources)
+- [Magento Commerce](magento-commerce)
+- [Magento B2B](magento-b2b)
+
+## [User Guide](user-guide)
+### [Installation](installation)
+- [Installation Flow](installation-flow)
+- [Magento System Requirements](magento-system-requirements)
+- [Prerequisites](prerequisites)
+- [Installation Options](installation-options)
+- [Post-installation](post-installation)
+### [Setup your Account](setup-your-account)
+- [Creating an Account](creating-an-account)
+- [Securing Your Account](securing-your-account)
+- [Sharing Your Account](securing-your-account)
+### [Setup your store](setup-your-store)
+- [Basic Configuration](basic-configuration)
+    - [Store Admin](store-admin)
+        - [Admin Sign In](admin-sign-in)
+        - [Your Admin Account](your-admin-account)
+        - [Admin Sidebar](admin-sidebar)
+        - [Admin Workspace](admin-workspace)
+            - [Dashboard](dashboard)
+            - [Message Inbox](message-inbox)
+            - [Global Search](global-search)
+            - [Grid Controls](grid-controls)
+                - [Grid Layout](grid-layout)
+            - [Actions Control](actions-control)
+        - [Session Lifetime](session-lifetime)
+    - [Store Details](sotore-details)
+        - [Store Information](store-information)
+        - [Locale Options](locale-options)
+        - [State Options](state-options)
+        - [Country Options](country-options)
+        - [Merchant Location](merchant-location)
+        - [Currency](currency)
+        - [Store Email Addresses](store-email-addresses)
+    - [Storefront Branding](storefront-branding)
+        - Uploading Your Logo
+        - Adding a Favicon
+        - Welcome Message
+        - Copyright Notice
+        - Store Demo Notice
+
+    - [Websites, Stores & Views](websites-stores-views)
+    - Scope
+        - Changing Scope
+        - Catalog Scope
+        - Product Scope
+        - Price Scope
+        - Customer Account Scope
+        - Scope Quick Reference
+    - Single Store Mode
+
+    - [B2B Overview](b2-b-overview)
+        - Configuring B2B Features
+        - Configuring Quotes
+        - Configuring Requisition Lists
+        - Configuration Summary
+        - Purchase Order Overview
+
+    - [Industry Compliance](industry-compliance)
+        - Accessibility
+        - Payments
+            - PCI Compliance Guidelines
+            - Payment Services Directive
+        - Privacy
+            - CCPA Compliance
+                - CCPA Compliance Guide
+            - GDPR Compliance
+            - Privacy Policy
+            - Cookie Law Compliance
+                - Cookie Restriction Mode
+                - Cookie Reference
+### [Build your Catalog](build-your-catalog)
+- Catalog Menu
+    - Catalog URL
+- Products Grid
+    - Workspace controls
+    - Default Columns
+- Creating Products
+    - Product Workspace
+        - Default Field values
+        - Scheduled Changes
+    - Product types
+    - Simple Products
+    - Configurable Products
+    - Grouped Products
+    - Virtual Products
+    - Bundle Products
+    - Downloadable Products
+        - Configuring Downloadable Products
+    - Gift Cards
+        - Gift Card workflow    
+        - Creating a Gift Card
+        - Gift Card accounts
+            - Configuring Gift Card Accounts
+        - Export Full Catalog
+- Product Settings
+    - Advanced settings
+    - Other Settings
+        - Sources
+        - Content
+        - Configurations
+        - Product Reviews
+        - Images and Videos
+        - Search Engine Optimization
+        - Related Products, Up-sells, and Cross-sells
+            - Related Products
+            - Up-sells
+            - Cross-sells
+        - Product View Optimization
+        - Customizable Options
+        - Product in Websites
+        - Design
+        - Schedule Design Update
+        - Autosettings
+        - Gift Options
+        - Product In Shared Catalogs
+        - Downloadable Information
+        - Grouped Products
+        - Bundle Items
+        - Gift Card Information
+- Managing Price
+    - Advanced Pricing
+        - Group Price
+        - Special Price
+        - Tier Price
+        - Minimum Advertised Price
+            - MAP Logic
+            - Configuring MAP
+        - Custom Pricing
+- Managing Inventory
+    - Learning about Inventory Management
+        - About Sources and Stocks
+        - About Source Selection Algorithm and Reservations
+        - About Order Status and Reservations
+        - About Product Types
+    - Getting Started with Inventory Management
+        - Configuring Single and Multi Source Merchants
+        - Expanding and Restructuring Inventory
+        - Migrating and Upgrading
+    - Configuring Inventory Management
+        - Enabling Inventory Management
+        - Configuring Global Options
+        - Configuring Product Options
+        - Configuring Backorders
+        - Configuring Source Priority Algorithm
+        - Configuring Distance Priority Algorithm
+        - Product Alerts
+            - Product Alert Run Settings
+            - Stock Message Scenarios
+    - Managing Sources
+        - Adding a New Source
+        - Disabling Sources
+    - Managing Stocks
+        - Adding a New Stock
+        - Prioritizing Sources for a Stock
+        - Deleting Stocks
+        - Managing Inventory Quantities
+        - Assigning Sources per Product
+        - Assigning Quantities per Product
+        - Bulk Assigning Sources
+        - Bulk Unassigning Sources
+        - Transferring Inventory to Source
+        - Importing and Exporting Inventory
+    - Managing Orders and Shipments
+        - Creating Shipments with Inventory Management
+Images and Videos
+    - Uploading Product Images
+    - Resizing Product Images
+    - Adding Product Video
+    - Storefront Media Browser
+    - Placeholders
+    - Watermarks
+    - Swatches
+        - Creating Swatches
+- Categories
+    - Best Practices
+    - Creating Categories
+        - Root Categories
+        - Hidden Categories
+        - Modifying Categories
+    - Scheduled Changes
+    - Content
+    - Display
+    - Search Engine Optimization
+    - Products in Category
+        - Sorting Category Products
+    - Design Settings
+    - Category Permissions
+- Product Attributes
+    - Best Practices
+    - Creating Product Attributes
+        - Adding an Attribute
+    - Deleting Product Attributes
+    - Attribute Sets
+    - Attribute Input Types
+        - Date and Time Options
+- Shared Catalog
+    - Configuring Price Scope
+    - Creating a Shared Catalog
+        - Set Pricing and Structure
+        - Assign Companies
+    - Managing a Shared Catalog
+        - Adding Products
+        - General Information
+        - Product Selection
+        - Custom Pricing
+        - Category Permissions
+- Using a Flat Catalog
+### [Design and Publish](design-and-publish)
+- Content Menu
+    - Content Elements
+        - Pages
+            - Core Content
+                - Default Pages
+            - Workspace Controls
+                - Page Search
+                - Page Actions
+                - Grid Layout
+                - Scheduled Changes
+            - Adding a New Page
+                - Duplicating a Page
+                - Switching Home Pages
+            - Media Storage
+                - Adobe Stock Integration
+                    - Using Adobe Stock Images
+                    - Save an Image Preview
+                    - License an Image
+                - New Media Gallery
+                    - Asset Management
+                    - Folder Management
+                    - Media Gallery Image Optimization
+            - Using the Editor
+                - Inserting a Link
+                - Inserting an Image
+                - Inserting a Widget
+                - Inserting a Variable
+                - Configuring the Editor
+        - Hierarchy
+            - Configuring Page Hierarchy
+            - Adding a Node
+        - Blocks
+            - Adding New Blocks
+                - Adding Social Plugins
+                - Adding a Lightbox or Slider
+            - Positioning Blocks
+                - Using a Widget
+                - Using a Layout Update
+        - Dynamic Blocks
+            - Rotating Dynamic Blocks
+            - Dynamic Blocks in Price Rules
+        - Widgets
+            - Widget Types
+            - Creating a Widget
+                - New Products List
+                - Orders and Returns
+            - Templates
+    - Page Builder
+        - Learning Page Builder
+            - Tutorial 1: Simple Page
+            - Tutorial 2: Blocks
+            - Tutorial 3: Catalog Content
+        - Page Builder Setup
+        - Workspace
+        - Layout
+            - Row
+            - Column
+            - Tabs
+        - Elements
+            - Text
+            - Heading
+            - Buttons
+            - Divider
+            - HTML Code
+        - Media
+            - Image
+            - Video
+            - Banner
+            - Slider
+            - Map
+        - Add Content
+            - Block
+            - Dynamic Block
+            - Products
+            - Product Recommendations
+    - Design & Theme
+        - Design Configuration
+            - Page Setup
+            - HTML Head
+            - Header
+            - Footer
+        - Page Layout
+            - Standard Page Layouts
+            - Storefront Examples
+            - Layout Updates
+        - Themes
+            - Using the Default Theme
+            - Installing a New Theme
+            - Theme Assets
+                - Merging CSS Files
+                - Merging Javascript Files
+            - Scheduling Design Changes
+    - Content Staging
+        - Scheduling an Update
+        - Staging Dashboard
+            - Editing a Campaign
+            - Adding an Item
+            - Previewing a Campaign
+### [Market and Promote](market-and-promote)
+- Marketing Menu
+- Channels
+    - Amazon Sales Channel 4.0+
+        - Amazon Sales Channel
+        - Getting Started with Amazon Sales Channel
+            - About Amazon Sales Channel
+            - About Amazon Marketplace
+            - About Amazon and your Magento Catalog
+            - Best Practices and Limitations
+
+        - Onboard Amazon Sales Channel
+            - Pre-Setup Tasks
+                - Create Magento Attributes for Amazon
+            - Verify the Amazon API Key
+            - Store Integration
+            - Create Listing Rule
+            - Default Store Settings
+
+        - Amazon Sales Channel Home
+            - Amazon Stores
+            - Learning and Preparation
+            - Attributes
+                - Manage Attributes
+                - Create and Edit Attributes
+                - View Attribute Mapping
+        - Sales Channel Admin Settings
+        - Amazon Store Dashboard
+        - Manage Store Settings
+            - Listing Settings
+                - Product Listing Actions
+                - Third Party Listings
+                - Listing Price
+                - (B2B) Business Pricing
+                - Stock/Quantity
+                - Fulfilled By
+                - Catalog Search
+                - Product Listing Condition
+                    - Renewed Products
+            - Order Settings
+            - Listing Rules
+                - Listing Rule Preview
+            - Pricing Rules
+                - Add New Pricing Rule
+                - Price Rule General Settings
+                - Price Rule Conditions
+                - Price Rule Actions
+                    - Standard Price Rule
+                    - Intelligent Repricing Rule
+                        - Competitor Conditional Variances
+                        - Price Adjustment
+                        - Floor Price
+                        - Optional Ceiling Price
+                        - Price Rule Examples
+                        - Price Scope
+                            - Price Priority Logic
+                            - Buy Box Competitor Pricing
+                            - Lowest Competitor Pricing
+            - Store Reports
+                - Competitive Price Analysis
+                - Listing Improvements
+            - Logs
+                - Listing Changes Log
+                - Communication Errors Log
+            - Store Integration Settings
+        - Manage Listings
+            - Manage by Status/Tab
+                - Incomplete Listings
+                - New Third Party Listings
+                - Ready to List
+                - Inactive Listings
+                - Active Listings
+                - Overrides
+                - Ineligible Listings
+                - Ended Listings
+            - Manage by Actions
+                - Create and Assign Catalog Products
+                - Create and Edit Overrides
+                - Create an Alias Seller SKU
+                - Edit an Assigned ASIN
+                - End an Amazon Listing
+                - Publish an Amazon Listing
+                - Switch to Fulfilled by Amazon/Merchant
+                - Update Required Info
+                - View Details
+        - Manage Orders
+            - View Amazon Orders
+            - View Amazon Order Details
+            - Common Order Processing Tasks
+            - Fulfillment Workflows
+            - Cancel Unshipped Orders
+- Shopping Tools
+    - Opportunities to Engage
+    - Email a Friend
+    - Wish Lists
+        - Configuring Wish Lists
+        - Updating Wish Lists
+        - Sharing a Wish List
+        - Wish List Search
+    - Product Relationships
+        - Compare Products
+        - Recently Viewed / Compared
+    - Product Reviews
+        - Magento Product Reviews
+            - Enable Magento Product Reviews
+            - Moderate Reviews
+            - Ratings
+        - Yotpo Product Reviews
+            - Basic Features
+            - Integration / Setup
+            - Magento Admin Settings
+            - Yotpo Reviews
+            - Common Tasks
+            - Yotpo Reporting and Analytics
+- Promotions
+    - Catalog Price Rules
+        - Create a Catalog Price Rule
+        - Scheduled Changes
+        - Multiple SKUs
+    - Cart Price Rules
+        - Create a Cart Price Rule
+        - Coupon Codes
+            - Configuring Coupon Codes
+            - Coupons Report
+        - Scheduled Changes
+        - Free Shipping Promotion
+        - Buy X Get Y Free
+        - Discount with Minimum Purchase
+        - Discount with First Purchase
+    - Product Recommendations
+        - Create New Recommendation
+        - Edit Existing Recommendation
+        - Inclusion and Exclusion Filters
+        - Add Recommendation to Page Builder
+        - Recommendation Types
+            - Most viewed
+            - Most purchased
+            - Recommended for you
+            - Most added to cart
+            - Viewed this, viewed that
+            - Viewed this, bought that
+            - Bought this, bought that
+            - More like this
+            - Trending
+            - Visual similarity
+        - Recommendation Metrics
+        - Recommendation Best Practices
+        - Limitations with Product Recommendations
+        - Fetch Product Recommendations from a Different Source
+    - Related Product Rules
+        - Creating a Related Product Rule
+        - Related Product Rule Priority
+        - Configuring Related Product Rules
+- Merchandising
+    - Visual Merchandiser
+        - Creating Category Rules
+        - Configuring "Smart Attributes"
+    - Gift Registries
+        - Gift Registry Information
+        - Setting Up a Gift Registry
+        - Configuring Gift Registries
+        - Gift Registry Search
+    - Rewards and Loyalty
+        - Configuring Reward Points
+        - Reward Exchange Rates
+        - Reward Points in Price Rules
+    - Private Sales and Events
+        - Event Components
+        - Event Ticker
+        - Configuring Events
+            - Restricting Access
+            - Sales Restrictions
+        - Creating Events
+            - Updating Events
+        - Catalog Events Carousel
+        - Invitations
+            - Configuring Invitations
+- Communications
+    - Email
+        - Supported Email Clients
+        - Preparing Your Email Logo
+        - Configuring Email Templates
+            - Sales Email
+            - Configuring Company Email
+            - Admin User Email
+        - Customizing Email Templates
+            - Header Template
+            - Footer Template
+            - Message Templates
+        - Email Reminders
+            - Creating Email Reminders
+            - Configuring Email Reminders
+            - Email Reminder Templates
+        - Email Template List
+        - Configuring Email Communications
+    - dotdigital Engagement Cloud
+        - Setting Up Engagement Cloud
+            - Account Details
+                - Account Access
+                - API Users
+                - Transactional Email Users
+                - Data Mapping
+        - Create a Campaign
+            - Import Your Contacts
+            - Schedule a Campaign
+            - Automate a Campaign
+            - Exclusion Rules
+        - dotdigital Chat
+    - Sales Documents
+        - Preparing Your Invoice Logo
+        - Adding Reference IDs to Header
+        - Customer Address Templates
+    - Newsletters
+        - Configuring Newsletters
+        - Newsletter Templates
+        - Sending Newsletters
+        - Managing Subscribers
+    - RSS Feeds
+    - Using Variables
+        - Adding Predefined Variables
+        - Adding Custom Variables
+        - Markup Tags
+        - Using Markup Tags in Links
+        - Dynamic Media URLs
+        - Variable Reference
+    - Social
+- SEO and Search
+    - Catalog Navigation
+        - Top Navigation
+        - Breadcrumb Trail
+        - Product Listings
+        - Pagination Controls
+        - Layered Navigation
+            - Filterable Attributes
+            - Price Navigation
+            - Configuring Layered Navigation
+    - Catalog Search
+        - Quick Search
+        - Advanced Search
+        - Search Results
+        - Weighted Search
+        - Configuring Catalog Search
+    - Search Terms
+        - Popular Search Terms
+        - Adding Search Terms
+        - Search Terms Report
+        - Search Synonyms
+    - SEO Best Practices
+        - Meta Data
+            - Canonical Meta Tag
+        - Using a Sitemap
+            - Sitemap Configuration
+            - Search Engine Robots
+        - URL Rewrites
+            - Configuring URL Rewrites
+            - Automatic Product Redirects
+            - Creating URL Rewrites
+- Google Tools
+    - Google Privacy Settings
+    - Google Analytics
+    - Google Content Experiments
+    - Google Tag Manager
+        - Creating a Tag to Track Conversions
+        - Enhanced Ecommerce
+        - Troubleshooting Tools
+    - Google Adwords
+### [Sell and Deliver](sell-and-deliver)
+- Point of Purchase
+    - Instant Purchase
+    - Quick Order
+    - Shopping Cart
+        - Cart Configuration
+            - My Cart Link
+            - Cart Sidebar
+            - Redirect to Cart
+            - Quote Lifetime
+            - Minimum Order Amount
+            - Cart Thumbnails
+            - Gift Options
+                - Gift Wrap
+                - Gift Options Tax
+        - Persistent Cart
+            - Persistent Cart Workflow
+            - Configuring a Persistent Cart
+        - Requesting a Quote
+        - Order by SKU
+    - Shopping Assistance
+        - Managing a Shopping Cart
+        - Creating an Order
+        - Updating an Order
+    - Checkout
+    - Checkout Options
+        - Onepage Checkout
+        - Guest Checkout
+        - Terms and Conditions
+        - Address Search
+        - Payment Failed Emails
+    - Checkout Totals Sort Order
+- Order Management
+    - Quotes
+        - Quote Workflow
+        - Negotiating a Quote
+        - Example Quote
+    - Orders
+        - Order Workspace
+        - Order Actions
+        - Order Search
+        - Grid Layout
+        - Order Workflow
+        - Processing an Order
+        - Order Status
+        - Order Status Workflow
+        - Custom Order Status
+        - Order Status Notification
+        - Allow Reorders
+        - Scheduled Operations
+        - Pending Payment Order Lifetime
+        - Scheduled Grid Updates
+    - Invoices
+        - Creating an Invoice
+        - Printing Invoices
+    - Shipments
+        - Shipment Workflow
+        - Creating a Shipment
+        - Canceling a Shipment
+    - Credit Memos
+        - Issuing a Credit Memo
+        - Printing Credit Memos
+    - Store Credit
+        - Configuring Store Credit
+        - Applying Store Credit
+        - Customer Account Dashboard
+    - Company Credit
+        - Credit Activity
+        - Receiving Payments
+    - Returns
+        - RMA Lifecycle
+        - Customer Experience
+        - Configuring Returns
+        - Returns Attribute
+    - Billing Agreements
+    - Transactions
+    - Archive
+        - Configuring the Archive
+- Payments
+    - PayPal Payment Solutions
+        - PayPal Express Checkout
+        - PayPal Payments Advanced
+        - PayPal Payments Pro
+        - PayPal Payments Standard
+        - PayPal Payflow Pro
+        - PayPal Payflow Link
+        - PayPal Billing Agreements
+        - PayPal Settlement Reports
+        - PayPal Credit
+        - PayPal Fraud Management Filter
+        - PayPal by Country
+    - Online Payment Methods
+        - Klarna
+            - Klarna Storefront Experience
+            - Setting Up Klarna
+        - Amazon Pay
+            - Customer Experience
+            - Setting Up Amazon Pay
+            - Managing Transactions
+    - Offline Payment Methods
+        - Check / Money Order
+        - Cash On Delivery
+        - Payment on Account
+        - Bank Transfer
+        - Purchase Order
+        - Zero Subtotal Checkout
+    - Fraud Protection
+- Delivery
+    - Shipping Settings
+        - Point of Origin
+        - Shipping Policy
+        - Multiple Addresses
+    - Basic Delivery Methods
+        - Free Shipping
+        - Flat Rate
+        - Table Rates
+        - In- Store Delivery
+        - Dimensional Weight
+    - Shipping Carriers
+        - UPS
+        - USPS
+        - FedEx
+        - DHL
+    - Shipping Labels
+        - Shipping Label Workflow
+        - Configuring Shipping Labels
+        - Creating Shipping Labels
+            - Label Packages
+### [Manage your Store](manage-your-store)
+- Stores
+    - Stores Menu
+    - All Stores
+        - Adding Store Views
+            - Editing a Store View
+            - Adding a Language
+            - Translating Products
+            - Translating Content
+        - Adding Stores
+        - Adding Websites
+        - Store URLs
+            - Using a Custom Admin URL
+    - Configuration
+    - Taxes
+        - Vertex Cloud
+            - Your Account
+            - Setting Up Vertex
+            - Products
+            - Customer Exceptions
+            - Vertex Field Mapping
+            - Configuring Vertex Tax Calculations
+            - Configuring Storefront Address Cleansing
+        - General Tax Settings
+            - Cross Border Price Consistency
+        - Tax Rules
+        - Tax Classes
+            - Configuring Tax Classes
+            - Adding New Tax Classes
+            - Default Tax Destination
+            - EU Place of Supply for Digital Goods
+        - Fixed Product Tax
+            - Configuring FPT
+        - Price Display Settings
+        - Tax Zones and Rates
+            - Import/Export Tax Rates
+        - Value Added Tax (VAT)
+            - Configuring VAT
+            - VAT ID Validation
+            - Configuring VAT ID Validation
+            - Tax Quick Reference
+            - Hidden Tax Calculation
+        - International Tax Guidelines
+            - U.S. Tax Guidelines
+            - Canadian Tax Guidelines
+            - EU Tax Guidelines
+        - Warning Messages
+    - Currency
+        - Currency Configuration
+        - Currency Symbols
+        - Updating Currency Rates
+    - Attributes
+        - Customer Attributes
+            - Address Attributes
+            - Address Templates
+        - Product Attributes
+- System
+    - System Menu
+    - Data Transfer
+        - Working with CSV Files
+            - Data Validation
+        - Import
+            - Import History
+            - Product Images
+            - Importing Tier Price Data
+            - Import Guidelines
+        - Export
+            - Export Criteria
+        - Data Transfer Examples
+            - Bundle Products
+            - Configurable Products
+            - Downloadable Products
+            - Importing Tier Prices
+        - Scheduled Import/Export
+            - Scheduling an Import
+            - Scheduling an Export
+        - Product Attribute Reference
+            - Complex Data
+            - Advanced Pricing Data
+        - Customer Attribute Reference
+        - Catalog Sync
+    - Integrations
+        - Integration with ERP Systems
+        - Magento Services
+    - Permissions
+        - Adding Users
+        - Locked Users
+        - User Roles
+            - Role Resources
+    - Alternate Media Storage
+        - Using a Database
+        - Using a CDN
+    - Security
+        - Security Scan
+        - Security Action Plan
+        - Configuring Admin Security
+        - CAPTCHA
+        - Google reCAPTCHA
+        - Two-Factor Authentication
+            - Using 2FA
+            - Managing 2FA
+        - Encryption Key
+        - Session Validation
+        - Browser Capabilities Detection
+        - Security Issue Reporting
+    - Tools
+        - Cache Management
+            - Full-Page Cache
+        - Index Management
+            - Index Trigger Events
+        - Backups
+        - Cron (Scheduled Tasks)
+        - Developer Tools
+            - Action Logs
+                - Report
+                - Archive
+                - Bulk Actions
+            - Amazon Pay Logs
+            - Frontend Development Workflow
+            - Using Static File Signatures
+            - Optimizing Resource Files
+            - Developer Client Restrictions
+            - Template Path Hints
+            - Translate Inline
+        - Support
+            - Data Collector
+            - System Reports
+- Reports
+    - Reports Menu
+    - Marketing Reports
+    - Review Reports
+    - Sales Reports
+        - Refresh Statistics
+    - Site-Wide Analysis Tool
+    - Customer Reports
+    - Product Reports
+    - Private Sales Reports
+    - Business Intelligence
+        - Advanced Reporting
+        - MBI
+    - Customer Engagement
+    - New Relic Reporting
+        - New Relic Queries
+- MCOM
+    - MCOM Menu
+    - Manage Stock Aggregates
+    - Message Log
+    - Integration
+    - Changelog
+
+## [Developer Docs](developer-docs)
+### [Setup](setup)
+- System Requirements
+- Installation Guide
+- Configuration Guide
+- Magento Commerce Cloud
+### [Backend Development](backend-development)
+- PHP Developer Guide
+- B2B Developer Guide
+- Coding Standards
+- Technical Guidelines
+### [Frontend Development](front-development)
+- Frontend Developer Guide
+- UI Components Guide
+- JavaScript Developer Guide
+- Page Builder Developer Guide
+### [Release Notes](release-notes)
+- What's New
+- Release Notes
+- Backward Incompatible Changes
+- Upcoming Releases
+### [Magento APIs](magento-apis)
+- Get Started with Magento APIs
+- REST API Reference (Static)
+- REST API Reference (Local)
+- GraphQL Developer Guide
+- Marketplace EQP API Reference
+
+## [Magento OMS](magento-oms)
+### [Overview](overview)
+- OMS in a nutshell
+- Order flows
+- Feature list
+### [Use the Admin](use-the-admin)
+- Admin User Guides
+- SI Portal User Guide
+### [Connect your store](connect-your-store)
+- Typical integrations
+- OMS Connector
+- Magento Integration Bus
+- Specifications
+### [Understand the features](understand-the-features)
+- Stock & Sourcing
+- Omnichannel
+- Payments
+
