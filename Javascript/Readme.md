@@ -1,6 +1,6 @@
 # The JavaScript language
 ## An introduction
-- An Introduction to JavaScript
+- [An Introduction to JavaScript](an-introduction-to-java-script.md)
 - Manuals and specifications
 - Code editors
 - Developer Console
