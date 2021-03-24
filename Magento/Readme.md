@@ -17,7 +17,9 @@
 - [Sharing Your Account](securing-your-account)
 ### [Setup your store](setup-your-store)
 - [Basic Configuration](basic-configuration)
+    -
     - [Store Admin](store-admin)
+        - 
         - [Admin Sign In](admin-sign-in)
         - [Your Admin Account](your-admin-account)
         - [Admin Sidebar](admin-sidebar)
@@ -857,46 +859,1287 @@ Images and Videos
 ## [Developer Docs](developer-docs)
 ### [Setup](setup)
 - System Requirements
-- Installation Guide
+    - Installation flow
+    - Magento system requirements
+    - Prerequisites
+        - Apache
+        - nginx
+        - MySQL
+        - PHP
+        - Elasticsearch
+            - Configure nginx and Elasticsearch
+            - Configure Apache and Elasticsearch
+        - Get your authentication keys
+        - Magento file system ownership and permissions
+            - Overview of ownership and permissions
+            - Set pre-installation ownership and permissions
+        - RabbitMQ
+        - Set up a remote MySQL database connection
+        - SELinux and iptables
+        - Optional software
+        - Get the Magento software
+    - Quick start install
+        - Contributor install
+        - Clone the Magento repository
+        - Change to a released version
+        - Update installation dependencies
+    - Advanced install
+    - Post Installation
+        - Verify the installation
+        - Configure the Magento application
+        - Optionally set a umask
+        - Install optional sample data
+            - Install using Composer
+            - Install by cloning repositories
+    - Tutorials
+        - Back up and roll back the file system, media, and database
+        - Configure consumer behavior
+        - Configure the lock provider
+        - Configure the store
+        - Create, edit, or unlock a Magento administrator account
+        - Create or update the deployment configuration
+        - Create the Magento database schema
+        - Display or change the Admin URI
+        - Enable or disable maintenance mode
+        - Enable or disable modules
+        - Modify docroot to improve security
+        - Remove sample data modules or update sample data
+        - Uninstall language packages
+        - Uninstall modules
+        - Uninstall or reinstall Magento
+        - Update the Magento database schema and data
+        - Uninstall themes Composer packages
+    - Troubleshooting
 - Configuration Guide
-- Magento Commerce Cloud
+- Introduction
+- Security settings
+    - Google reCAPTCHA
+    - Password hashing
+    - Prevent cache poisoning
+    - Secure cron.php to run in a browser
+    - Two-Factor Authentication
+    - Security.txt
+    - X-Frame-Options header
+- Magento application initialization and bootstrap
+    - About Magento modes
+    - Customize base directory paths (MAGE_DIRS)
+    - Enable profiling (MAGE_PROFILER)
+    - Set the value of bootstrap parameters
+- Pipeline Deployment
+    - Overview
+    - Technical Details
+    - Development System Setup
+    - Build System Setup
+    - Production System Setup
+    - File systems access permissions
+    - Examples
+    - Shared configuration
+    - Using CLI commands
+    - Using environment variables
+- Single machine deployment
+    - Command line configuration
+    - Get started with command-line configuration
+    - Logging
+    - Manage the cache
+    - Manage the indexers
+    - Configure and run cron
+    - Code compiler
+    - Set the Magento mode
+    - Start message queue consumers
+    - URN highlighter
+    - Dependency reports
+    - Catalog sync
+    - Configuration management
+    - 
+    - Export the configuration
+    - Set configuration values
+    - Import data from configuration files
+    - Translation dictionaries and language packages
+    - Static view files deployment
+    - 
+    - Static files deployment strategies
+    - Deploy static view files
+    - Create symlinks to LESS files
+    - Run unit tests
+    - Convert layout XML files
+    - Generate data for performance testing
+    - Run the support utilities (Magento Commerce only)
+- Magento configuration files
+    - Magento's deployment configuration
+    - Module configuration files
+    - Create or extend configuration types
+    - Disable module output
+    - Configuration reference
+    - 
+    - Sensitive and system-specific
+    - Payment configuration paths reference
+    - Other configuration paths reference
+    - Magento Commerce for B2B Extension configuration paths reference
+    - .gitignore reference
+    - Use environment variables to override configuration settings
+    - config.php reference
+    - env.php reference
+    - system.xml reference
+- Configure caching
+    - Associate cache frontends with cache types
+    - Low-level cache options
+    - Static content signing
+    - L2 cache
+- Configure Redis
+    - Use Redis for the Magento page and default cache
+    - Use Redis for session storage
+- Configure and use Varnish
+    - Install Varnish
+    - Configure Varnish and your web server
+    - Configure Magento to use Varnish
+    - Advanced Varnish configuration
+    - How Magento cache clearing works with multiple Varnish instances
+    - Final verification
+    - How Magento cache clearing works with Varnish
+    - How Varnish caching works
+- Use memcached for session storage
+    - Install, configure, verify memcached on Ubuntu
+    - Install, configure, verify memcached on CentOS
+    - Configure Magento to use memcached
+- Multiple websites or stores
+    - Change increment ID for a database entity on particular store
+    - Set up multiple websites, stores, and store views in the Admin
+    - Tutorial—Set up multiple websites or stores with nginx
+    - Tutorial—Set up multiple websites with Apache
+- Remote storage
+    - Configure AWS S3 adapter
+    - Configure caching
+    - Configure image resizing
+- Set up a custom cron job and cron group
+    - Custom cron job and cron group reference
+    - Configure a custom cron job and cron group (tutorial)
+- Configure the database profiler
+    - Configure and maintain Elasticsearch
+    - Configure Elasticsearch stopwords
+    - Configure Magento to use Elasticsearch
+- Message Queues
+    - Manage message queues 
+- Split database performance solution (Magento Commerce only)
+    - Automatically configure master databases
+    - Manually configure master databases
+    - Verify split databases
+    - Set up optional database replication
+- Revert from a split database to a single database
+- Custom Logging
+    - Magento logging in more detail
+    - Example - logging database activity
+    - Example - logging to a custom log file
+- How to locate your session files
+- GDPR compliance
+
+
+## Magento Commerce Cloud
+- Overview
+    - Onboarding tasks
+- Architecture
+    - Starter architecture
+    - Starter develop and deploy workflow
+    - Pro architecture
+    - Pro develop and deploy workflow
+    - Scaled architecture
+- Technologies and requirements
+    - Composer
+    - Magento Cloud CLI
+    - ece-tools package
+    - Git
+    - SSH and sFTP
+    - PrivateLink
+    - New Relic
+    - SendGrid
+- Manage your project
+    - Configure your project
+    - Project structure
+    - Manage user access
+    - Enable MFA for SSH
+    - Manage branches with the Interface
+    - Manage branches with the CLI
+    - Manage disk space
+    - Monitor performance
+    - View logs
+    - Snapshots and backup management
+    - Restore an environment
+    - Profile database queries
+- Local development setup
+    - Prepare for manual setup
+        - Install Magento prerequisites
+        - Enable SSH keys
+        - Set up the Magento file system owner
+        - Clone and branch the project
+        - Install Magento
+        - First time deployment
+    - Optional - Configure Xdebug
+    - Optional - Install sample data
+- Cloud Docker development
+    - Install
+        - Additional tools for file synchronization
+    - Upgrade
+    - Use Docker
+        - Production mode
+        - Developer mode
+    - Configure and manage
+        - Configuration sources
+        - Manage the database
+        - Manage cron jobs
+        - Set up multiple websites or stores
+        - Xdebug for Docker
+        - Extend Docker
+        - Add Blackfire.io service
+    - Docker container architecture
+        - Service containers
+        - CLI containers
+    - Functional Testing
+        - Magento application testing
+        - Magento Cloud code testing
+    - Docker quick reference
+    - Get support for Cloud Docker
+- Integrations
+    - Bitbucket integration
+    - GitHub integration
+    - GitLab integration
+    - Health notifications
+- Import existing code into a project
+    - Prepare your existing Magento Commerce system
+    - Import Magento Commerce code
+- Configure your store
+    - Best practices for store configuration
+    - Set up PayPal
+    - Set up Magento B2B
+    - Set up cron jobs
+    - Set up multiple Cloud websites or stores
+    - Install, manage, and upgrade modules
+    - Install a theme
+    - Import URL Rewrites
+- Configure Fastly services
+    - Set up Fastly
+        - Customize cache configuration
+        - Customize error and maintenance pages
+    - Web Application Firewall
+    - Image Optimization
+    - Custom VCL snippets
+        - Reroute requests to a CMS backend
+        - Block referral spam
+        - IP allow list
+        - IP block list
+        - Bypass Fastly cache
+    - Fastly troubleshooting
+- Configure environments
+    - Application
+        - Properties
+        - Variables
+        - PHP application
+        - Workers
+        - Set cache for static files
+    - Build and deploy
+        - Set up notifications
+        - Logging handlers
+    - Routes
+        - Caching
+        - Redirects
+        - Server side includes
+    - Services
+        - Set up MySQL service
+        - Set up Redis service
+        - Set up Elasticsearch service
+        - Set up RabbitMQ service
+    - PHP (php.ini)
+    - Environment variables
+        - ADMIN variables
+        - Global variables
+        - Build variables
+        - Cloud variables
+        - Deploy variables
+        - Post-deploy variables
+        - Working with variables
+- Configuration management for store settings
+    - Example of managing system-specific settings
+- Optimize deployment
+    - Cloud deployment process
+    - Scenario-based deployment
+    - Zero downtime deployment
+    - Static content deployment
+    - Smart wizards
+- Deploy your store
+    - Deployment process
+    - Continuous deployment
+    - Protective block
+    - Build and deploy on local
+    - Prepare to deploy to Staging and Production
+    - Deploy code and migrate static files and data
+    - Test deployment
+    - Error message reference for ece-tools
+- Site launch
+    - Launch checklist
+    - Launch steps
+- Troubleshooting
+    - Troubleshoot deployment
+    - Incorrect credentials
+    - Resolve issues with a new project
+    - Component deployment failure
+    - Resolve issues with encryption key
+    - Resolve issues with HTML minification
+    - Resolve issues with Google Analytics during deployment
+    - Site availability
+    - Add site map and search engine robots
+    - Theme troubleshooting
+- Upgrades and patches
+    - Update ece-tools version
+    - Apply patches
+    - Upgrade Magento version
+    - Upgrade to use ece-tools
+- Release notes
+    - ece-tools
+    - Magento Cloud Patches
+    - Magento Cloud Docker
+    - Magento Cloud Components
+    - Backward incompatible changes
 ### [Backend Development](backend-development)
 - PHP Developer Guide
+    - Introduction
+        - Developer roadmap
+        - Introduction to Composer
+        - Glossary of common terms
+    - Prepare (development quick start)
+        - Component types
+        - About component file structure
+        - Extension repository structure
+        - Roadmap for developing and packaging components
+        - Extension lifecycle
+    - Build
+        - The di.xml file
+        - Optimal development environment
+        - The composer.json file
+        - Define your configuration files
+        - Create your component file structure
+        - Register your component
+        - URN schema validation
+        - Name your component
+        - Component load order
+        - Enable or disable your component
+    - Package
+    - Package a component
+        - Upload your component to the Magento Marketplace
+    - Validate
+        - Test your component
+    - Partial caching
+        - Create custom cache engines
+        - Create a cache type
+    - Full page caching
+    - Public content
+    - Private content
+    - Add CLI commands
+        - Command naming guidelines
+        - How to add CLI commands
+    - Staging (Magento Commerce only)
+    - Component development
+        - Asynchronous/deferred operations
+        - Service contracts
+        - Public interfaces & APIs
+        - Service contract design patterns
+        - Dependency injection
+        - ObjectManager
+        - Events and observers
+        - Factories
+        - Proxies
+        - Code generation
+        - EAV and extension attributes
+        - Plugins (Interceptors)
+        - Routing
+        - Indexing
+            - Indexing overview
+            - Indexer optimization
+            - Adding a custom indexer
+        - Declarative schema
+            - Declarative schema overview
+            - Migrate install/upgrade scripts to declarative schema
+            - Configure declarative schema
+            - Develop data and schema patches
+        - Web APIs
+            - Configure services as web APIs
+            - Set custom routes
+            - WebApi request processors pool
+        - Message Queues
+            - Asynchronous Message Queue configuration files
+            - Bulk operations
+            - Configure message Queues
+            - Example bulk operations implementation
+            - Handling outdated in-memory object states
+            - Message queues overview
+            - Message queues and stores
+            - Migrate message queue configuration
+        - Adding extension attributes to entity
+        - Adding an admin grid
+        - Price adjustments
+        - Searching with repositories
+        - Clear directories during development
+        - Adapters
+        - View models
+        - Variable Pool
+    - Configuration
+        - Configuration Importers
+        - Sensitive Environment Settings
+    - Framework
+        - Array Manager
+        - DateTime Library
+        - Serialize Library
+        - URL Library
+    - Security
+        - Content Security Policies
+        - Non-secure functions
+        - XSS Prevention
+    - Versioning
+        - Check the Magento version
+        - Codebase changes
+        - Module version dependencies
+        - MFTF test versioning and backward compatibility policy
 - B2B Developer Guide
+    - Introduction
+    - Integrate with B2B using REST
+        - Company
+            - Integrate with the Company module
+            - Manage company objects
+            - Manage company users
+            - Manage company roles
+            - Manage company structures
+        - Company credit
+            - Integrate with the CompanyCredit module
+            - Manage company credit
+        - Shared Catalog
+            - Integrate with the SharedCatalog module
+            - Manage shared catalogs
+            - Assign categories and products
+            - Assign companies
+            - Negotiable Quotes
+            - Integrate with the NegotiableQuote module
+            - Manage negotiable quotes
+            - Update a negotiable quote
+        - Negotiable quote checkout
+            - Place a negotiable quote order
+    - Develop B2B extensions
+    - B2B Release Notes
 - Coding Standards
-- Technical Guidelines
+    - Coding Standards
+        - Code demarcation standard
+        - PHP coding standard
+        - DocBlock standard
+        - JavaScript coding standard
+        - JavaScript DocBlock standard
+        - jQuery widget coding standard
+        - LESS coding standard
+        - HTML style guide
+    - Technical guidelines
+    - Technical vision
+        - Web Api
 ### [Frontend Development](front-development)
 - Frontend Developer Guide
+    - Introduction
+    - Conventional notations used in this Guide
+    - Magento cache overview
+    - Theme development best practices
+    - Themes
+        - Install a third-party storefront theme
+        - Uninstall a storefront theme
+        - Create an Admin theme
+        - Apply an Admin theme
+        - Create a new storefront theme
+        - Apply and configure a storefront theme
+        - Locate templates, layouts, and styles
+        - Magento theme structure
+        - Theme inheritance
+        - Adding custom favicons
+        - Configure theme properties
+        - Configure product video
+        - JavaScript Bundling
+    - Layout
+        - Layout instructions
+        - Layout file types
+        - Product layouts
+        - Create a new layout
+        - Extend a layout
+        - Override a layout
+        - Common layout customization tasks
+        - Customizing layout illustration
+    - Templates
+        - Templates basic concepts
+        - Templates customization walkthrough
+        - Templates customization sample
+        - Email templates
+        - Email templates layout handle
+    - Cascading style sheets (CSS)
+        - Include CSS
+        - CSS and LESS preprocessing
+        - Compile LESS using Grunt
+        - Magento UI library
+        - Using jQuery UI styles
+        - Customizing styles illustration
+        - Using custom fonts
+        - CSS critical path
+        - Using custom CSS preprocessor
+            - Add custom CSS preprocessor
+            - Use Sass preprocessor and Gulp task runner
+    - Quick start guide to styles
+        - Simple ways to customize a theme's styles
+        - Simple style changes with client-side LESS compilation vs. server-side
+    - How to Make Your Theme Responsive and Mobile
+        - CSS in responsive design
+        - JavaScript in Magento responsive design
+        - Create a responsive mobile theme based on a default theme
+        - Customizing RWD illustration
+        - Add a custom breakpoint
+    - Translations
+        - Use translation dictionary to customize strings
+        - Translate theme strings
+        - Example theme translation dictionary
+    - Form validation
+        - Custom validation rule
+        - Custom Form validation
+    - Tools
+        - Using Grunt for Magento tasks
 - UI Components Guide
+    - Overview of UI components
+    - Components
+        - ActionDelete component
+        - ActionsColumn component
+        - Bookmarks component
+        - Button component
+        - Checkbox component
+        - CheckboxToggleNotice component
+        - Checkboxset component
+        - ColorPicker component
+        - Column component
+        - Columns component
+        - ColumnsEditor component
+        - ColumnsEditorRecord component
+        - ColumnsEditorView component
+        - ColumnsEditingBulk component
+        - ColumnsEditingClient component
+        - ColumnsResize component
+        - ColumnsControls component
+        - Container component
+        - Date component
+        - DateColumn component
+        - DragAndDrop component
+        - DynamicRows component
+        - DynamicRowsDragAndDrop component
+        - DynamicRowsRecord component
+        - Email component
+        - Expandable column component
+        - ExportButton component
+        - Fieldset component
+        - File component
+        - FileUploader component
+        - Filters component
+        - FiltersChips component
+        - Form component
+        - FormDataProvider component
+        - GridDataProvider component
+        - Hidden component
+        - HtmlContent component
+        - ImagePreview component
+        - ImageUploader component
+        - Input component
+        - InsertForm component
+        - InsertListing component
+        - LinkColumn component
+        - Listing (grid) component
+        - Masonry (grid) component
+        - MassActions component
+        - Modal component
+        - Multiline component
+        - Multiselect component
+        - MultiselectColumn component
+        - Nav component
+        - OnOffColumn component
+        - Paging component
+        - Radioset component
+        - Range component
+        - Search component
+        - Select component
+        - SelectColumn component
+        - Sizes component
+        - SortBy component
+        - Tab component
+        - Text component
+        - Textarea component
+        - ThumbnailColumn component
+        - TimelineColumns component
+        - ListingToolbar component
+        - TreeMassActions component
+        - UrlInput component
+        - UI-select component
+        - WYSIWYG component
+            - Add Custom Editor
+            - Configure the TinyMCE editor
+            - Extension Points
+    - Concepts
+        - Configuration flow of UI components
+        - About XML configuration of UI components
+        - Providing Data to UI Components
+        - About PHP modifiers in UI components
+        - Template Literals
+        - Magento custom Knockout.js bindings
+        - Magento binding syntax
+        - About the uiClass library
+        - About the uiElement class
+        - About the uiCollection class
+        - The uiLayout service object
+        - Linking properties of UI components
+        - uiRegistry
+    - How Tos
+        - Create and display a category attribute with UI components
+        - Update the page URL type
+        - Render prices on the frontend
+        - Declare a custom UI component
+    - Troubleshoot
+        - Debug UI components JavaScript
 - JavaScript Developer Guide
+    - Introduction
+    - Conventional notations used in this Guide
+    - JavaScript
+        - JavaScript resources in Magento
+        - RequireJS in Magento
+        - Calling and initializing JavaScript
+        - Frontend product repository
+        - Use custom JavaScript
+        - Locate JavaScript components
+        - Customizing JavaScript illustration
+        - Using JavaScript mixins
+    - Magento jQuery widgets
+        - Accordion widget
+        - Alert widget
+        - Breadcrumbs widget
+        - Calendar widget
+        - Collapsible widget
+        - Confirmation widget
+        - Dropdown widget
+        - DropdownDialog widget
+        - FolderTree widget
+        - Gallery widget
+        - List widget
+        - Loader widget
+        - Magnifier widget
+        - MediaUploader widget
+        - Menu widget
+        - Modal widget
+        - Multiselect widget
+        - Navigation widget
+        - PasswordStrengthIndicator widget
+        - PopupWindow widget
+        - Prompt widget
+        - QuickSearch widget
+        - RedirectUrl widget
+        - RemainingCharacters widget
+        - RowBuilder widget
+        - Sortable widget
+        - Sticky widget
+        - Tabs widget
+        - ToggleAdvanced widget
+        - TrimInput widget
 - Page Builder Developer Guide
+    -
+    - What is Page Builder?
+    - Release notes
+    - Example code
+    - Administration
+        -
+        - Deactivate Page Builder
+        - Upgrade content types
+        - Use for product attributes
+    - Architecture
+        - 
+        - Overview
+        - Configurations
+        - Datastore
+        - Events
+        - Knockout bindings
+    - Content types
+        - 
+        - Create
+            - Introduction
+            - Add configuration
+            - Add templates
+            - Add components
+            - Add a form
+            - Add styles
+            - Add an icon
+            - Workflow tips
+        - Customize
+            - Add additional data
+            - Add block chooser
+            - Add custom toolbar
+            - Add icons and images
+            - Add image uploader
+            - Add storefront widget
+            - Add text editor
+            - Add visual selector
+            - Apply product conditions
+            - Configure the panel
+            - Render server-side preview
+        - Extend
+        - Introduction
+        - Extend an appearance
+        - Extend another appearance
+        - Add appearances
+    - Styles
+        - 
+        - Introduction
+        - Override styles
+        - Use Themes
+        - Use Modules
+        - Use HTML Code
+    - Viewports
+        - 
+        - Introduction
+        - Add viewports
+        - Add breakpoints
+        - Use breakpoints
+        - Change breakpoints and viewports
+    - BlueFoot migration
+        - 
+        - Overview
+        - Install the migration module
+        - Run the migration module
+        - How content migration works
+        - Migrate content from custom blocks
+        - Migrate other BlueFoot content
+    - Contributors
 ### [Release Notes](release-notes)
 - What's New
+    -
 - Release Notes
+    -
+    - Release Information
+    - Introduction
+    - 2.4 Release Notes
+        - 
+        - Magento Open Source 2.4.2 Release Notes
+        - Magento Commerce 2.4.2 Release Notes
+        - Magento Open Source 2.4.1 Release Notes
+        - Magento Commerce 2.4.1 Release Notes
+        - Magento Open Source 2.4.0 Release Notes
+        - Magento Commerce 2.4.0 Release Notes
+        - Magento B2B Release Notes
+    - Backward incompatible changes
+        - 
+        - Highlights
+        - Reference
+    - Packages
+        - 
+        - Magento Open Source packages
+        - Magento Commerce packages
+        - Magento Commerce Cloud packages
+        - B2B
+        - GraphQL
+        - Inventory Management
+        - Page Builder
+    - Sales Channels
+        - 
+        - Amazon
+    - Product Recommendations
 - Backward Incompatible Changes
 - Upcoming Releases
+    - Release Information
+    - Upcoming releases
+    - Release policy
+    - Lifecycle policy
+    - Availability
+    - Commerce features
 ### [Magento APIs](magento-apis)
 - Get Started with Magento APIs
+    -
+    - Introduction
+    - Use REST APIs
+        - Construct a request
+        - Use cURL to run the request
+        - Status codes and responses
+    - Use SOAP Services
+    - Authentication
+        - Token-based authentication
+        - OAuth-based authentication
+        - OAuth error codes
+        - Session-based authentication
+    - Create an integration
+    - Web API functional testing
 - REST API Reference (Static)
+    - 
+    - Overview
+    - Quick reference
+    - 
+    - REST Endpoints (ReDoc)
+        - 
+        - Admin REST endpoints
+        - Customer REST endpoints
+        - Guest REST endpoints
+        - Generate a local API reference
+    - Use REST endpoints
+        - 
+        - Search using REST
+        - Search with the /search endpoint
+        - Retrieve filtered search responses
+        - Protected endpoints
+        - Restricting access to anonymous web APIs
+        - Asynchronous web endpoints
+        - Bulk endpoints
+        - Bulk operation status endpoints
+        - Search for the status of a bulk operation
+        - API usage notes
+    - Tutorials
+        - Prerequisite tasks
+            - 
+            - Generate an admin token
+            - Order processing
+            - 
+            - Order processing tutorial
+            - Step 1. Configure the store
+            - Step 2. Get the admin token
+            - Step 3. Create a customer
+            - Step 4. Create a quote
+            - Step 5. Add items to the cart
+            - Step 6. Prepare for checkout
+            - Step 7. Create an order
+            - Step 8. Create an invoice
+            - Step 9. Create a shipment
+            - Step 10. Issue a partial refund
+        - Order processing with Inventory Management
+            - 
+            - Order processing with Inventory Management tutorial
+            - Step 1. Configure your environment
+            - Step 2. Create sources
+            - Step 3. Create stocks
+            - Step 4. Link stocks and sources
+            - Step 5. Reassign products to custom sources
+            - Step 6. Create a customer and generate a customer token
+            - Step 7. Create a cart and add products to it
+            - Step 8. Prepare for checkout
+            - Step 9. Create an order
+            - Step 10. Create an invoice
+            - Step 11. Run the Source Selection Algorithms
+            - Step 12. Create a shipment
+            - Step 13. Bulk transfer products
+            - Step 14. Create an order for in-store pickup (optional)
+        - Create configurable products
+            - 
+            - Create configurable products tutorial
+            - Step 1. Plan the product
+            - Step 2. Create the configurable product
+            - Step 3. Create the simple products
+            - Step 4. Define configurable product options
+            - Step 5. Create the personalization option
+        - Create a configurable product using bulk APIs
+            - 
+            - Create a configurable product using bulk APIs tutorial
+            - Step 1. Plan the product
+            - Step 2. Create the configurable and simple products
+            - Step 3. Define configurable product options
+            - Step 4. Create the personalization option
+        - Create and manage grouped products
+    - Modules
+        - 
+        - Catalog
+            - 
+            - General notes
+            - Manage prices for multiple products
+        - Sales
+            - 
+            - Refunds
+        - Inventory
+            - 
+            - Manage sources
+            - Manage stocks
+            - Link and unlink stocks and sources
+            - Manage source items
+            - Perform bulk actions
+            - Manage low-quantity notifications
+            - Check salable quantities
+            - Manage source selection algorithms
+            - In-Store Pickup
 - REST API Reference (Local)
+    -
+    - Overview
+        - Quick reference
+            - 
+            - REST Endpoints (ReDoc)
+                - 
+                - Admin REST endpoints
+                - Customer REST endpoints
+                - Guest REST endpoints
+                - Generate a local API reference
+    - Use REST endpoints
+        - 
+        - Search using REST
+        - Search with the /search endpoint
+        - Retrieve filtered search responses
+        - Protected endpoints
+        - Restricting access to anonymous web APIs
+        - Asynchronous web endpoints
+        - Bulk endpoints
+        - Bulk operation status endpoints
+        - Search for the status of a bulk operation
+        - API usage notes
+        - Tutorials
+    - Prerequisite tasks
+        - 
+        - Generate an admin token
+    - Order processing
+        - 
+        - Order processing tutorial
+        - Step 1. Configure the store
+        - Step 2. Get the admin token
+        - Step 3. Create a customer
+        - Step 4. Create a quote
+        - Step 5. Add items to the cart
+        - Step 6. Prepare for checkout
+        - Step 7. Create an order
+        - Step 8. Create an invoice
+        - Step 9. Create a shipment
+        - Step 10. Issue a partial refund
+    - Order processing with Inventory Management
+        - 
+        - Order processing with Inventory Management tutorial
+        - Step 1. Configure your environment
+        - Step 2. Create sources
+        - Step 3. Create stocks
+        - Step 4. Link stocks and sources
+        - Step 5. Reassign products to custom sources
+        - Step 6. Create a customer and generate a customer token
+        - Step 7. Create a cart and add products to it
+        - Step 8. Prepare for checkout
+        - Step 9. Create an order
+        - Step 10. Create an invoice
+        - Step 11. Run the Source Selection Algorithms
+        - Step 12. Create a shipment
+        - Step 13. Bulk transfer products
+        - Step 14. Create an order for in-store pickup (optional)
+    - Create configurable products
+        - 
+        - Create configurable products tutorial
+        - Step 1. Plan the product
+        - Step 2. Create the configurable product
+        - Step 3. Create the simple products
+        - Step 4. Define configurable product options
+        - Step 5. Create the personalization option
+    - Create a configurable product using bulk APIs
+        - 
+        - Create a configurable product using bulk APIs tutorial
+        - Step 1. Plan the product
+        - Step 2. Create the configurable and simple products
+        - Step 3. Define configurable product options
+        - Step 4. Create the personalization option
+        - Create and manage grouped products
+    - Modules
+        - 
+        - Catalog
+            - 
+            - General notes
+            - Manage prices for multiple products
+        - Sales
+            - 
+            - Refunds
+        - Inventory
+            - 
+            - Manage sources
+            - Manage stocks
+            - Link and unlink stocks and sources
+            - Manage source items
+            - Perform bulk actions
+            - Manage low-quantity notifications
+            - Check salable quantities
+            - Manage source selection algorithms
+            - In-Store Pickup
 - GraphQL Developer Guide
+    - Overview
+    - Implementation
+        - 
+        - GraphQL requests
+        - Authorization tokens
+        - Protected mutations
+        - GraphQL caching
+        - Filtering with custom attributes
+    - Development
+        - 
+        - Define the GraphQL schema for a module
+        - Resolvers
+        - Extend an existing GraphQL schema
+        - Identity class
+        - Create a custom urlResolver service
+        - Debugging GraphQL queries
+        - Exception handling
+    - Functional testing
+        - Queries
+        - 
+        - Using queries
+        - availableStores query
+        - cart query
+        - categories query
+        - category query
+        - categoryList query
+        - checkoutAgreements query
+        - cmsBlocks query
+        - cmsPage query
+        - company query
+        - compareList query
+        - countries query
+        - country query
+        - currency query
+        - customAttributeMetadata query
+        - customer query
+        - customerCart query
+        - customerDownloadableProducts query
+        - customerOrders query
+        - customerPaymentTokens query
+        - getHostedProUrl query
+        - getPayflowLinkToken query
+        - giftCardAccount query
+        - isCompanyAdminEmailAvailable query
+        - isCompanyEmailAvailable query
+        - isCompanyRoleNameAvailable query
+        - isCompanyUserEmailAvailable query
+        - isEmailAvailable query
+        - productReviewRatingsMetadata query
+        - products query
+        - pickupLocations query
+        - storeConfig query
+        - urlResolver query
+        - wishlist query
+        - Mutations
+        - 
+        - Using mutations
+        - addProductsToCart mutation
+        - addBundleProductsToCart mutation
+        - addConfigurableProductsToCart mutation
+        - addDownloadableProductsToCart mutation
+        - addProductsToCompareList mutation
+        - addProductsToRequisitionList mutation
+        - addProductsToWishlist mutation
+        - addRequisitionListItemsToCart mutation
+        - addReturnComment mutation
+        - addReturnTracking mutation
+        - addSimpleProductsToCart mutation
+        - addVirtualProductsToCart mutation
+        - applyCouponToCart mutation
+        - applyGiftCardToCart mutation
+        - applyRewardPointsToCart mutation
+        - applyStoreCreditToCart mutation
+        - assignCompareListToCustomer mutation
+        - changeCustomerPassword mutation
+        - clearCustomerCart mutation
+        - copyItemsBetweenRequisitionLists mutation
+        - copyProductsBetweenWishlists mutation
+        - createBraintreeClientToken mutation
+        - createCompany mutation
+        - createCompanyRole mutation
+        - createCompanyTeam mutation
+        - createCompanyUser mutation
+        - createCompareList mutation
+        - createCustomer mutation
+        - createCustomerV2 mutation
+        - createCustomerAddress mutation
+        - createEmptyCart mutation
+        - createKlarnaPaymentsSession mutation
+        - createPayflowProToken mutation
+        - createPayPalExpressToken mutation
+        - createProductReview mutation
+        - createRequisitionList mutation
+        - createWishlist mutation
+        - deleteCompanyRole mutation
+        - deleteCompanyTeam mutation
+        - deleteCompanyUser mutation
+        - deleteCompareList mutation
+        - deleteCustomerAddress mutation
+        - deleteRequisitionList mutation
+        - deleteRequisitionListItems mutation
+        - deletePaymentToken mutation
+        - deleteWishlist mutation
+        - generateCustomerToken mutation
+        - generateCustomerTokenAsAdmin mutation
+        - handlePayflowProResponse mutation
+        - mergeCarts mutation
+        - moveProductsBetweenWishlists mutation
+        - moveItemsBetweenRequisitionLists mutation
+        - placeOrder mutation
+        - redeemGiftCardBalanceAsStoreCredit mutation
+        - removeProductsFromCompareList mutation
+        - removeCouponFromCart mutation
+        - removeGiftCardFromCart mutation
+        - removeItemFromCart mutation
+        - removeProductsFromWishlist mutation
+        - removeReturnTracking mutation
+        - removeRewardPointsFromCart mutation
+        - removeStoreCreditFromCart mutation
+        - reorderItems mutation
+        - requestPasswordResetEmail mutation
+        - requestReturn mutation
+        - resetPassword mutation
+        - revokeCustomerToken mutation
+        - sendEmailToFriend mutation
+        - setBillingAddressesOnCart mutation
+        - setGiftOptionsOnCart mutation
+        - setGuestEmailOnCart mutation
+        - setPaymentMethodAndPlaceOrder mutation
+        - setPaymentMethodOnCart mutation
+        - setShippingAddressesOnCart mutation
+        - setShippingMethodsOnCart mutation
+        - subscribeEmailToNewsletter mutation
+        - updateCartItems mutation
+        - updateCompany mutation
+        - updateCompanyStructure mutation
+        - updateCompanyRole mutation
+        - updateCompanyTeam mutation
+        - updateCompanyUser mutation
+        - updateCustomer mutation
+        - updateCustomerEmail mutation
+        - updateCustomerV2 mutation
+        - updateCustomerAddress mutation
+        - updateProductsInWishlist mutation
+        - updateRequisitionList mutation
+        - updateRequisitionListItems mutation
+        - updateWishlist mutation
+    - Interfaces
+        - 
+        - Product interface implementations
+        - ProductInterface attributes
+        - CategoryInterface attributes
+        - CustomizableOptionInterface attributes
+        - Bundle product data types
+        - Configurable product data types
+        - Downloadable product data types
+        - GiftCardProduct data types
+        - GroupedProduct data types
+        - Simple product data types
+        - Virtual product data types
+        - CartItemInterface attributes and implementations
+        - CreditMemoItemInterface attributes and implementations
+        - InvoiceItemInterface attributes and implementations
+        - OrderItemInterface attributes and implementations
+        - RequisitionListItemInterface attributes and implementations
+        - ShipmentItemInterface attributes and implementations
+        - WishlistItemInterface attributes and implementations
+    - Payment methods
+        - 
+        - Braintree
+        - Braintree Vault
+        - Klarna
+        - PayPal Express Checkout
+        - Express Checkout for other PayPal solutions
+        - PayPal Payflow Link
+        - PayPal Payflow Pro
+        - PayPal Payflow Pro Vault
+        - PayPal Payments Advanced
+        - PayPal Website Payments Pro Hosted Solution
+    - Tutorial
+        - 
+        - GraphQL checkout tutorial
+        - Step 1. Create a customer
+        - Step 2. Create an empty cart
+        - Step 3. Add products to the cart
+        - Step 4. Set the shipping address
+        - Step 5. Set the billing address
+        - Step 6. Set the delivery method
+        - Step 7. Apply a coupon
+        - Step 8. Set email on the cart
+        - Step 9. Set the payment method
+        - Step 10. Place the order
+    - Release Notes
 - Marketplace EQP API Reference
+    - Introduction
+    - Getting started
+        - Sandbox
+        - API access keys
+    - REST API
+        - Authentication
+        - Users
+        - Files
+        - Packages
+        - Test results
+        - Reports
+        - API callbacks
+        - Filtering
+        - Handling errors
+    - Getting help
 
 ## [Magento OMS](magento-oms)
 ### [Overview](overview)
 - OMS in a nutshell
-- Order flows
-- Feature list
+    -
+    - Introduction
+    - Terminology
+    - OMS feature list
+    - Connector feature list
+    - Order Flow
+        - Cancellation Flow
+        - In-store Pick Up Flow
+        - Ship from Store Flow
+        - Validation Flow
+    - Pre-Launch Checklist
+    - Browser Support
+    - Customer Support 
 ### [Use the Admin](use-the-admin)
 - Admin User Guides
-- SI Portal User Guide
+    - 
+    - OMS User Guides
+    - Collapse
+    - Introduction
+    - Dashboard
+    - Customer Service
+        - Exchanges
+        - Reshipments
+    - Products
+        - Catalog
+        - Inventory
+    - System
+        - Events
+        - Fulfillment
+        - Permissions
+        - Tools
+        - Other Settings
+    - Sales
+        - Orders
+        - Order details
+        - Ship to Store
+        - Ship from Store
+        - Pre-orders
+        - Backorders
+        - In-store pickup
+        - Pending arrival
+        - Exceptions & Sourcing Queue
+        - Reports
+    - SI Portal
+        - Access the SI Portal
+        - Global Settings
+        - Sales Channel
+        - Sources
+        - Stock Aggregates
+        - Troubleshooting
 ### [Connect your store](connect-your-store)
 - Typical integrations
-- OMS Connector
-- Magento Integration Bus
-- Specifications
-### [Understand the features](understand-the-features)
-- Stock & Sourcing
-- Omnichannel
-- Payments
-
+    -
+    - OMS Integration Guides
+    - Introduction
+    - Typical Integrations
+    - Order approval touchpoint
+    - Connector
+        - Connector architecture
+        - Install or upgrade the Connector
+        - Configure the Connector
+        - Apply patches
+        - Best practices for extending the Connector
+        - Synchronize shipping methods
+        - Bundles
+        - Gift Cards
+        - View logs
+    - API
+        - Integrating with OMS API
+        - Integration layer limits
+        - Query Language
+    - Omnichannel
+        - Request packing slip integration
+    - Carrier Integration
+        - Custom Payment Integration
+        - Specifications for Payments Integration
+    - Legacy Functionalities
+        - Reporting Feeds
+        - XML interfaces

@@ -1,5 +1,4 @@
 # Anthos
-## Agenda
 - [Day 1](day-1)
     - [Overview of Anthos](overview-of-anthos)
     - [Setting up Anthos](setting-up-anthos)
